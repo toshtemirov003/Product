@@ -1,0 +1,112 @@
+.site-nav__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+}
+
+.site-nav__item {
+    &:not(:last-child) {
+        margin-right: 24px;
+    }
+}
+
+.site-nav__item-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: $color-blue-black;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+
+    &:hover {
+        color: $color-skinny-jeans;
+    }
+}
+
+.site-nav__item-link--in {
+    padding: 10px 22px 9px 25px;
+    border: 1px solid $color-border-color;
+    border-radius: 4px;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-skinny-jeans;
+    }
+}
+
+.site-nav__item-link--up {
+    padding: 10px 23px 9px 25px;
+    color: $color-white;
+    background-color: $color-mystic;
+    border-radius: 4px;
+
+    &:hover {
+        opacity: 0.7;
+        // color: $color-mystic;
+        // background-color: $color-border-color;
+    }
+}
+.site-nav__item-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.site-nav__dark {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+@include breakpoint-down(520px) {
+    .site-nav {
+        position: absolute;
+        z-index: 1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: none;
+        width: 250px;
+        top: 100%;
+        right: 5%;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        &--open {
+            display: block;
+        }
+    }
+
+    .site-nav__list {
+        flex-direction: column;
+    }
+
+    .site-nav__item {
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 8px;
+        }
+    }
+
+    .site-nav__item-link {
+        color: $color-white;
+
+        &--in {
+            display: block;
+            color: $color-white;
+        }
+
+        &--up {
+            display: block;
+        }
+    }
+
+    .site-nav__item-link--in {
+        display: block;
+        color: $color-white;
+    }
+
+    .site-nav__dark {
+        display: none;
+    }
+}

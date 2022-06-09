@@ -1,0 +1,120 @@
+.question {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.question__heading {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    color: $color-blue-black;
+    text-align: center;
+}
+
+.question__desc {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-blue-black;
+}
+
+.question__text-border {
+    &::after {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #e7e7e7;
+        content: '';
+    }
+}
+
+.question__text-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+
+    &::before {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+        background-image: url(../img/plus.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        content: '';
+    }
+
+    &--minus::before {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+        background-image: url(../img/minus.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        content: '';
+    }
+}
+
+.question__text {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-blue-black;
+}
+
+.question__text-b-wrapper {
+    margin-bottom: 22px;
+
+    &::after {
+        display: block;
+        width: 100%;
+        margin-top: 22px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #e7e7e7;
+        content: '';
+    }
+}
+
+.question__text-b {
+    width: 100%;
+    max-width: 920px;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-blue-black;
+}
+
+@include breakpoint-down(520px) {
+    .question__heading {
+        max-width: 326px;
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
+
+    .question__desc {
+        max-width: 326px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .question__content {
+        max-width: 355px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product pricing</title>
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a class="site-header__logo-link" href="#">
+        <img class="site-header__logo" src="./img/logo.svg" alt="Site logo" width="178" height="36">
+      </a>
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__item-link" href="./index.html">Product</a></li>
+          <li class="site-nav__item"><a class="site-nav__item-link" href="./customers.html">Customers</a></li>
+          <li class="site-nav__item"><a class="site-nav__item-link" href="#">Pricing</a></li>
+          <li class="site-nav__item"><a class="site-nav__item-link" href="./resources.html">Resources</a></li>
+          <li class="site-nav__item"><a class="site-nav__item-link site-nav__item-link--in" href="#">Sign In</a></li>
+          <li class="site-nav__item"><a class="site-nav__item-link site-nav__item-link--up" href="#">Sign Up</a></li>
+          <li class="site-nav__item">
+            <a class="site-nav__item-link" href="#">
+              <img class="site-nav__dark" src="./img/dark-mode.svg" alt="Dark mode" width="24" height="24">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="site-header__btn js-header-btn">
+        <img class="site-header__btn-img" src="./img/btn-img.svg" alt="">
+      </button>
+    </header>
+  </div>
+  <main class="pricing-main">
+    <div class="container">
+      <h1 class="visually-hidden">Product Pricing</h1>
+      <section class="pricing">
+        <h2 class="pricing__heading">Pricing</h2>
+        <p class="pricing__desc">Let’s get some real work done here.</p>
+        <p class="pricing__text">Prodict is your perfect solution for working. Get started now for free</p>
+        <form class="price-section__form" action="https://echo.htmlacademy.ru" method="post">
+          <section class="price-section">
+            <div class="price-section__box">
+              <label class="price-section__card" for="Free">
+                <input class="price-section__form-input visually-hidden" type="radio" name="gender" id="Free"
+                  value="Capsule">
+                <div class="price-section__span">
+                  <h3 class="price-section__heading">Free</h3>
+                  <p class="price-section__desc">Brief price description</p>
+                  <div class="price-section__prices">
+                    <strong class="price-section__prices-zero">0</strong>
+                    <div class="price-section__prices-text">
+                      <p class="price-section__prices-dollor">$</p>
+                      <p class="price-section__prices-month">Per / month</p>
+                    </div>
+                  </div>
+                  <p class="price-section__text">Only 2 Operators</p>
+                  <p class="price-section__text">Notifications</p>
+                  <p class="price-section__text">Landing Pages</p>
+                  <a class="price-section__link" href="#">Order Now</a>
+                </div>
+              </label>
+              <label class="price-section__card" for="Standart">
+                <input class="price-section__form-input visually-hidden" type="radio" name="gender" id="Standart"
+                  value="Filter">
+                <div class="price-section__span price-section__span--selected">
+                  <h3 class="price-section__heading price-section__heading--white">Standard</h3>
+                  <p class="price-section__desc price-section__desc--white">Brief price description</p>
+                  <div class="price-section__prices">
+                    <strong class="price-section__prices-zero price-section__prices-zero--white">5</strong>
+                    <div class="price-section__prices-text">
+                      <p class="price-section__prices-dollor price-section__prices-dollor--white">$</p>
+                      <p class="price-section__prices-month">Per / month</p>
+                    </div>
+                  </div>
+                  <p class="price-section__text price-section__text--white">5+ Operators</p>
+                  <p class="price-section__text price-section__text--white">Notifications</p>
+                  <p class="price-section__text price-section__text--white">Landing Pages</p>
+                  <a class="price-section__link price-section__link--white" href="#">Order Now</a>
+                </div>
+              </label>
+              <label class="price-section__card" for="Premium">
+                <input class="price-section__form-input visually-hidden" type="radio" name="gender" id="Premium"
+                  value="Espresso">
+                <div class="price-section__span">
+                  <h3 class="price-section__heading">Premium</h3>
+                  <p class="price-section__desc">Brief price description</p>
+                  <div class="price-section__prices">
+                    <strong class="price-section__prices-zero">10</strong>
+                    <div class="price-section__prices-text">
+                      <p class="price-section__prices-dollor">$</p>
+                      <p class="price-section__prices-month">Per / month</p>
+                    </div>
+                  </div>
+                  <p class="price-section__text">10+ Operators</p>
+                  <p class="price-section__text">Notifications</p>
+                  <p class="price-section__text">Landing Pages</p>
+                  <a class="price-section__link" href="#">Order Now</a>
+                </div>
+              </label>
+            </div>
+          </section>
+        </form>
+      </section>
+    </div>
+
+    <section class="enterprise">
+      <div class="container">
+        <h2 class="enterprise__heading">Enterprise</h2>
+        <p class="enterprise__desc">Are you interested in a custom-tailored plan?</p>
+        <p class="enterprise__text">Product is a set of advanced features for really large teams with projects.</p>
+        <a class="enterprise__link" href="#">Get in touch with us</a>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="great-effect">
+        <h2 class="great-effect__heading">Product is being used with great effects alongside:</h2>
+        <div class="great-effect__content-img">
+          <img class="great-effect__img" src="./img/devise-img.png" alt="Devise image" width="528" height="392">
+          <div class="great-effect__content">
+            <div class="great-effect__enterpreneur">
+              <div class="great-effect__enterpreneur-heading-wrapper">
+                <h3 class="great-effect__enterpreneur-heading">Enterpreneur</h3>
+              </div>
+              <p class="great-effect__enterpreneur-desc">
+                Product is a great way to help medium and samall enterprise owners achieve their goals
+              </p>
+            </div>
+            <div class="great-effect__enterpreneur">
+              <div
+                class="great-effect__enterpreneur-heading-wrapper great-effect__enterpreneur-heading-wrapper--accountants">
+                <h3 class="great-effect__enterpreneur-heading">Accountants</h3>
+              </div>
+              <p class="great-effect__enterpreneur-desc">
+                Whether you are working on contract with clients, or on other key accounting documents, Product is for
+                you
+              </p>
+            </div>
+            <div class="great-effect__enterpreneur">
+              <div
+                class="great-effect__enterpreneur-heading-wrapper great-effect__enterpreneur-heading-wrapper--universities">
+                <h3 class="great-effect__enterpreneur-heading">Universities</h3>
+              </div>
+              <p class="great-effect__enterpreneur-desc great-effect__enterpreneur-desc--universities">
+                Organize university projects and have documents easily graded online with Product
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="question">
+        <h2 class="question__heading">Frequently asked question</h2>
+        <p class="question__desc">Something is not clear? You need help? Check our FAQ section</p>
+        <div class="question__content">
+          <div class="question__text-border">
+            <div class="question__text-wrapper">
+              <p class="question__text">What are my payment option?</p>
+            </div>
+          </div>
+          <div class="question__text-wrapper question__text-wrapper--minus">
+            <p class="question__text">How can I invite collaborator to platform?</p>
+          </div>
+          <div class="question__text-b-wrapper">
+            <p class="question__text-b">
+              After creating your account you will have an oppurtunity to create your first project that will be
+              associated withthe collaborators e-mail. An invitation will be sent automatically. Then, invited user will
+              have to confirm his account by e-mail and finish userd onboarding.
+            </p>
+          </div>
+          <div class="question__text-border">
+            <div class="question__text-wrapper">
+              <p class="question__text">Can I upgrade my plan?</p>
+            </div>
+          </div>
+          <div class="question__text-border">
+            <div class="question__text-wrapper">
+              <p class="question__text">Can I cancel my plan at anytime?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="company">
+        <div class="company__content">
+          <h2 class="company__heading">Join 100 Compannies who boost their business with Product</h2>
+          <a class="company__link" href="#">Get This</a>
+        </div>
+        <img class="company__img" src="./img/company-img.png" alt="Image" width="351" height="331">
+      </section>
+    </div>
+  </main>
+
+  <div class="container">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo-link">
+          <a class="footer__logo" href="#">
+            <img class="footer__logo-img" src="./img/logo.svg" alt="Site logo" width="163" height="29">
+          </a>
+          <ul class="footer__logo-list">
+            <li class="footer__logo-item">
+              <a class="footer__logo-item-link" href="#">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17 2.01611H7C4.23858 2.01611 2 4.25469 2 7.01611V17.0161C2 19.7775 4.23858 22.0161 7 22.0161H17C19.7614 22.0161 22 19.7775 22 17.0161V7.01611C22 4.25469 19.7614 2.01611 17 2.01611Z"
+                    stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M16 11.3859C16.1234 12.2182 15.9812 13.0681 15.5937 13.8149C15.2062 14.5617 14.5931 15.1673 13.8416 15.5456C13.0901 15.9239 12.2384 16.0555 11.4077 15.9219C10.5771 15.7882 9.80971 15.396 9.21479 14.8011C8.61987 14.2062 8.22768 13.4388 8.09402 12.6081C7.96035 11.7775 8.09202 10.9258 8.47028 10.1743C8.84854 9.42278 9.45414 8.80967 10.2009 8.42217C10.9477 8.03467 11.7977 7.89251 12.63 8.01593C13.4789 8.14181 14.2648 8.53739 14.8716 9.14423C15.4785 9.75108 15.8741 10.537 16 11.3859Z"
+                    stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M17.5 6.51611H17.51" stroke="#02897A" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__logo-item">
+              <a class="footer__logo-item-link" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
+                    stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__logo-item">
+              <a class="footer__logo-item-link" href="#">
+                <svg width="24" height="20" viewBox="0 0 24 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M23 1.01006C22.0424 1.68553 20.9821 2.20217 19.86 2.54006C19.2577 1.84757 18.4573 1.35675 17.567 1.13398C16.6767 0.911216 15.7395 0.967251 14.8821 1.29451C14.0247 1.62177 13.2884 2.20446 12.773 2.96377C12.2575 3.72309 11.9877 4.62239 12 5.54006V6.54006C10.2426 6.58562 8.50127 6.19587 6.93101 5.4055C5.36074 4.61513 4.01032 3.44869 3 2.01006C3 2.01006 -1 11.0101 8 15.0101C5.94053 16.408 3.48716 17.109 1 17.0101C10 22.0101 21 17.0101 21 5.51006C20.9991 5.23151 20.9723 4.95365 20.92 4.68006C21.9406 3.67355 22.6608 2.40277 23 1.01006V1.01006Z"
+                    stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__resourse">
+          <h2 class="footer__resourse-heading">Resource</h2>
+          <ul class="footer__resourse-list">
+            <li class="footer__resourse-item">
+              <a class="footer__item-link" href="#">About Us</a>
+            </li>
+            <li class="footer__resourse-item">
+              <a class="footer__item-link" href="#">Blog</a>
+            </li>
+            <li class="footer__resourse-item">
+              <a class="footer__item-link" href="#">Contact</a>
+            </li>
+            <li class="footer__resourse-item">
+              <a class="footer__item-link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__legal">
+          <h2 class="footer__legal-heading">Legal Stuff</h2>
+          <ul class="footer__legal-list">
+            <li class="footer__legal-item">
+              <a class="footer__item-link" href="#">Disclamier</a>
+            </li>
+            <li class="footer__legal-item">
+              <a class="footer__item-link" href="#">Financing</a>
+            </li>
+            <li class="footer__legal-item">
+              <a class="footer__item-link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__legal-item">
+              <a class="footer__item-link" href="#">Terms of Servise</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__input">
+          <p class="footer__input-text">knowing you're always on the best energy deal.</p>
+          <form class="footer__input-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="footer__input-input" type="text" name="user_name">
+            <button class="footer__input-link" href="#">Sign up Now</button>
+          </form>
+        </div>
+      </div>
+      <small class="footer__text">Made With Love By Figmaland All Right Reserved</small>
+    </footer>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

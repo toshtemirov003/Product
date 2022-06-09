@@ -1,0 +1,59 @@
+.latest {
+  margin-bottom: 100px;
+}
+.latest__heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  color: $color-blue-black;
+  text-align: center;
+}
+.latest__desc {
+  max-width: 693px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: $color-blue-black;
+}
+.latest__more-link {
+  max-width: 140px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-blue-black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  &::after {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    background-image: url(../../img/latest-strelka.svg);
+    content: "";
+  }
+  &:hover {
+    color: $color-skinny-jeans;
+  }
+}
+@include breakpoint-down(520px) {
+  .latest__heading {
+    max-width: 222px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .latest__desc {
+    max-width: 351px;
+    text-align: center;
+  }
+}

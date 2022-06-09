@@ -1,0 +1,102 @@
+.great-effect {
+    margin-bottom: 150px;
+}
+
+.great-effect__heading {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 56px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    color: $color-blue-black;
+    text-align: center;
+}
+
+.great-effect__content-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.great-effect__img {
+    width: 528px;
+    height: 392px;
+}
+
+.great-effect__content {
+    width: 100%;
+    max-width: 533px;
+}
+
+.great-effect__enterpreneur-heading-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    &::before {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-right: 30px;
+        background-image: url(../img/enterpreneur.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        content: '';
+    }
+
+    &--accountants::before {
+        background-image: url(../img/accountants.svg);
+    }
+
+    &--universities::before {
+        background-image: url(../img/universities.svg);
+    }
+}
+
+.great-effect__enterpreneur-heading {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: $color-blue-black;
+}
+
+.great-effect__enterpreneur-desc {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $color-blue-black;
+
+    &--universities {
+        margin-bottom: 0;
+    }
+}
+
+@include breakpoint-down(520px) {
+    .great-effect__heading {
+        max-width: 342px;
+        margin: 0 auto;
+        margin-bottom: 56px;
+    }
+
+    .great-effect__content-img {
+        flex-direction: column;
+    }
+
+    .great-effect__img {
+        width: 328px;
+        height: 292px;
+        margin-bottom: 38px;
+    }
+
+    .great-effect__content {
+        max-width: 334px;
+    }
+}

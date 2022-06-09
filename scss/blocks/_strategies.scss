@@ -1,0 +1,40 @@
+.strategies {
+    margin-bottom: 150px;
+}
+
+.strategies__heading {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    color: $color-blue-black;
+}
+
+.strategies__desc {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 33px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-blue-black;
+}
+
+@include breakpoint-down(520px) {
+    .strategies {
+        margin-bottom: 61px;
+    }
+
+    .strategies__heading {
+        text-align: center;
+    }
+
+    .strategies__desc {
+        max-width: 349px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}

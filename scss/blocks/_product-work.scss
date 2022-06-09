@@ -1,0 +1,113 @@
+.product-work {
+    margin-top: 101px;
+    margin-bottom: 115px;
+}
+
+.product-work__heading {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 73px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+    color: $color-blue-black;
+}
+
+.product-work__list {
+    @include list-unstyled;
+    margin-bottom: 78px;
+}
+
+.product-work__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &--row {
+        flex-direction: row-reverse;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 100px;
+    }
+}
+
+.product-work__item-img {
+    width: 500px;
+    height: 280px;
+}
+
+.product-work__item-content {
+    width: 100%;
+    max-width: 438px;
+}
+
+.product-work__item-text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $color-blue-black;
+    text-transform: uppercase;
+}
+
+.product-work__item-heading {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: $color-blue-black;
+}
+
+.product-work__item-desc {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $color-blue-black;
+}
+
+.product-work__link {
+    width: 100%;
+    max-width: 195px;
+    display: block;
+    margin: 0 auto;
+    padding: 11px 18px;
+    color: $color-white;
+    background-color: $color-mystic;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-skinny-jeans;
+    }
+}
+
+@include breakpoint-down(520px) {
+    .product-work__item {
+        &--row {
+            flex-direction: row;
+        }
+    }
+
+    .product-work__item-img {
+        width: 350px;
+        height: 195px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .product-work__item-content {
+        max-width: 355px;
+        margin: 0 auto;
+    }
+}

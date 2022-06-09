@@ -1,0 +1,108 @@
+.clients {
+    margin-bottom: 150px;
+}
+
+.clients__heading {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: $color-blue-black;
+    text-align: center;
+}
+
+.clients__desc {
+    max-width: 537px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $color-blue-black;
+    text-align: center;
+}
+
+.clients__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients__item {
+    width: 100%;
+    max-width: 327px;
+    padding: 28px 26px 24px;
+    background-color: $color-white;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+}
+
+.clients__item-star {
+    width: 106px;
+    height: 19px;
+    margin-bottom: 16px;
+}
+
+.clients__item-text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.clients__persons {
+    display: flex;
+    align-items: center;
+}
+
+.clients__persons-img {
+    margin-right: 14px;
+}
+
+.clients__persons-name {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: $color-mystic;
+}
+
+.clients__persons-job {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+@include breakpoint-down(520px) {
+    .clients__desc {
+        max-width: 323px;
+    }
+
+    .clients__list {
+        justify-content: center;
+    }
+
+    .clients__item {
+        margin-bottom: 32px;
+    }
+}

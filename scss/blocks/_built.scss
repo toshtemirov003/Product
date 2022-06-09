@@ -1,0 +1,115 @@
+.built {
+    margin-bottom: 150px;
+}
+
+.built__heading {
+    width: 100%;
+    max-width: 539px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 58px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: $color-blue-black;
+    text-align: center;
+}
+
+.built__content {
+    background-image: url(../img/built-ul-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-bottom: 90px;
+}
+
+.built__list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 34px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.built__item {
+    width: 100%;
+    max-width: 240px;
+
+    &:not(:last-child) {
+        margin-right: 46px;
+    }
+}
+
+.built__item-img {
+    margin-bottom: 30px;
+}
+
+.built__item-heading {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: $color-blue-black;
+}
+
+.built__item-desc {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-blue-black;
+}
+
+.built__link {
+    width: 100%;
+    max-width: 175px;
+    margin: 0 auto;
+    display: block;
+    padding: 15px 32px 14px 34px;
+    color: $color-white;
+    background-color: $color-mystic;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-skinny-jeans;
+    }
+}
+
+@include breakpoint-down(520px) {
+    .built__heading {
+        width: 100%;
+        max-width: 331px;
+    }
+
+    .built__content {
+        background-position: center bottom;
+    }
+
+    .built__list {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .built__item {
+        margin-bottom: 37px;
+
+        &:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+
+    .built__item-img {
+        margin-bottom: 24px;
+    }
+}

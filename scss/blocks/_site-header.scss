@@ -1,0 +1,31 @@
+.site-header {
+    position: relative;
+    z-index: 1;
+    padding-top: 29px;
+    padding-bottom: 19px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-header__logo-link {
+    &:hover{
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+    }
+}
+.site-header__logo {
+    width: 187px;
+    height: 36px;
+    display: block;
+}
+.site-header__btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+@include breakpoint-down(520px){
+    .site-header__btn {
+        display: block;
+    }
+}

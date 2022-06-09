@@ -1,0 +1,119 @@
+.hero {
+    margin-bottom: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__content {
+    width: 100%;
+    max-width: 518px;
+}
+
+.hero__content-heading {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: $color-blue-black;
+}
+
+.hero__content-desc {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 45px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-blue-black;
+}
+
+.hero__link--get {
+    margin-right: 30px;
+    color: $color-white;
+    padding: 15px 41px 14px;
+    background-color: $color-mystic;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        // color: $color-mystic;
+        background-color: $color-skinny-jeans;
+    }
+}
+
+.hero__link--video {
+    color: $color-mystic;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    transition: color 0.3s ease;
+
+    &::before {
+        display: inline-block;
+        width: 20px;
+        height: 17px;
+        content: url(../../img/video-before.svg);
+    }
+
+    &:hover {
+        color: $color-skinny-jeans;
+    }
+}
+
+.hero__img {
+    width: 600px;
+    height: 556px;
+}
+
+@include breakpoint-down(520px) {
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero__content-heading {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .hero__content-desc {
+        width: 100%;
+        max-width: 326px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .hero__link {
+        display: block;
+        text-align: center;
+
+        &--get {
+            display: inline-block;
+            margin-right: 28px;
+            padding: 15px 24px 14px 25px;
+        }
+    }
+
+    .hero__img {
+        width: 400px;
+        height: 356px;
+    }
+}
+
+@include breakpoint-down(370px) {
+    .hero__link {
+        &--get {
+            margin-right: 0;
+        }
+
+        &--video {
+            display: block;
+            margin-top: 20px;
+        }
+    }
+}

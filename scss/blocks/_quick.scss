@@ -1,0 +1,129 @@
+.quick {
+    padding-top: 53px;
+    padding-bottom: 150px;
+    background-image: url(../img/quick-fon.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
+.quick__heading {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: $color-blue-black;
+}
+
+.quick__desc {
+    width: 100%;
+    max-width: 542px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: $color-blue-black;
+}
+
+.quick__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &--list {
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+}
+
+.quick__item {
+    display: flex;
+    align-items: center;
+
+    &--reserve {
+        flex-direction: row-reverse;
+    }
+
+    &--item {
+        flex-direction: row-reverse;
+    }
+}
+
+.quick__item-img {
+    margin-right: 16px;
+
+    &--2 {
+        margin-right: 0;
+        margin-left: 16px;
+    }
+}
+
+.quick__item-text {
+    padding: 0;
+    padding: 15px 24px 14px 25px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2F281E;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+    border-radius: 26.5px;
+}
+
+.quick__link {
+    width: 100%;
+    max-width: 216px;
+    margin: 0 auto;
+    display: block;
+    padding: 15px 31px 14px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-white;
+    background-color: $color-mystic;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-skinny-jeans;
+    }
+}
+
+@include breakpoint-down(520px) {
+    .quick__desc {
+        max-width: 338px;
+    }
+
+    .quick__list {
+        flex-direction: column;
+
+        &--list {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .quick__item {
+        margin-bottom: 8px;
+
+        &--item {
+            flex-direction: row-reverse;
+        }
+
+        &--4 {
+            flex-direction: row;
+        }
+    }
+}
